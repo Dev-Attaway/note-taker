@@ -4,25 +4,18 @@
         "text": "Test text"
     },
     {
-        "note_id": "a9b6"
-    },
-    {
-        "note_id": "f0b1"
-    },
-    {
-        "note_id": "f7bd"
-    },
-    {
-        "note_id": "c9d7"
+        "title": "Test Title",
+        "text": "Test text",
+        "note_id": "b4102007-5983-4ed6-b985-640c91a72575"
     },
     {
         "title": "Test Title",
         "text": "Test text",
-        "note_id": "79a8"
+        "note_id": "edc23138-0a38-4bff-9ec1-5bb2a94f58a0"
     },
     {
-        "title": "this is a test",
-        "text": "test test test",
-        "note_id": "f26a"
+        "title": "Test Title",
+        "text": "Test text",
+        "note_id": "55c7d802-52a4-4798-b8c1-aae3a5f7ec56"
     }
 ]

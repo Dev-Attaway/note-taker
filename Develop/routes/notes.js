@@ -1,5 +1,8 @@
 const notes = require('express').Router();
 const { v4: uuidv4 } = require('uuid');
+
+// functions are loaded from helpers/fsUtils'
+// notes.js can now use the functions readFromFile, readAndAppend, and writeToFile
 const {
     readFromFile,
     readAndAppend,
@@ -22,15 +25,19 @@ notes.delete('/:note_id', (req, res) => {
 });
 
 // This API route is a GET Route for retrieving all the notes
-notes.get('/api/notes', (req, res) => {
+// GET http://localhost:3001/api/notes
+notes.get('/', (req, res) => {
     console.info(`${req.method} request received for notes`);
     readFromFile('./db/db.json').then((data) => res.json(JSON.parse(data)));
-  });
-  
+});
+
 // This API route is a POST Route for a new UX/UI tip
-notes.post('/api/notes', (req, res) => {
+// POST http://localhost:3001/api/notes
+notes.post('/', (req, res) => {
     console.info(`${req.method} request received to add a note`);
 
+    // deconsturcting the JSON object recieved through POST call
+    // the JSON data with the names title and text are stored from that JSON data sent 
     const { title, text } = req.body;
 
     if (title && text) {
@@ -40,17 +47,18 @@ notes.post('/api/notes', (req, res) => {
             note_id: uuidv4(),
         };
 
+        // write to the data base with the new note created through the POST
         readAndAppend(newNote, './db/db.json');
         const response = {
             status: 'success',
             body: newNote,
         };
+
+        // displays the response with the unique uuid to the back-end
         res.status(201).json(response);
     }
-    else {
+    else
         res.json('Error in posting feedback');
-    }
-
 });
 
 module.exports = notes;

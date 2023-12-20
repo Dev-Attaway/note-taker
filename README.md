@@ -10,18 +10,19 @@
 7. [Questions](#questions)
 
 ## Description
- an application called Note Taker that can be used to write and save notes This application will use an Express.js back end and will save and retrieve note data from a JSON file
+An application called Note Taker that can be used to write and save notes This application will use an Express.js back end and will save and retrieve note data from a JSON file
 ## Installation
-Fork the application from listed GitHub Repo
+Fork the application from the listed GitHub Repo
 ## Usage
-Must have node.js inorder to execute the commands to initialize program from the CLI, Insomia was used to test POST, GET, and DELETE request
+Must have [node.js](https://nodejs.org/en) to execute the commands to initialize the program from the CLI, Insomia was used to test POST, GET, and DELETE requests.
+[Insomnia](https://insomnia.rest/) is an open-source API testing tool that allows developers to test, debug, and document RESTful APIs.
 ## Contributing
-No further contributions for consideration, develope from your own fork
+No further contributions for consideration, developed from your fork
 ## Tests
-Needs insomia or a similar server hosting software
+Needs Insomnia or a similar API-building software
 ## License
-Please see https://mit-license.org/ to get detailed information for this license
+Please see https://mit-license.org/ to get detailed information about this license
 
 ## Questions
-You can find me [HERE](https://github.com/Dev-attaway) on Github
-You can email me at attaway.code@gmail.com if you have any additional questions.
+You can find me [HERE](https://github.com/Dev-attaway) on GitHub
+Feel free to email me at attaway.code@gmail.com if you have any other questions.
